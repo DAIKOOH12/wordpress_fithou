@@ -1,0 +1,17 @@
+.text-cantfind{
+    color: #02033B;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 97px;
+    text-align: center;
+}
+
+.pic-cantfind{
+    display: block;
+    margin-top: 61px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 365px;
+    width: 425;
+    height: 371;
+}
