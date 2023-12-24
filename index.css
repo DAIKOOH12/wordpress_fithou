@@ -61,6 +61,7 @@ body {
 
 .menu{
     margin-top: 50px;
+    margin-bottom: 0;
     position: relative;
     background-color: #135FAB;
     display: flex;
@@ -229,7 +230,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.body-item-row1-box2-title{
+.body-item-row1-box2-title, .finding-item-row1-box2-title, .post-item-row1-box2-title{
     font-size: 24px;
     font-weight: bolder;
     color: #02033B;
@@ -237,7 +238,7 @@ body {
     text-align: center;
 }
 
-.body-item-row1-box2-text{
+.body-item-row1-box2-text, .finding-item-row1-box2-text, .post-item-row1-box2-text{
     font-size: 16px;
     font-weight: 300;
     width: 258.63px;

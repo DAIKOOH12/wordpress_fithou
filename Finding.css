@@ -5,24 +5,22 @@
     font-weight: bold;
 }
 
-.container-finding{
+.container-finding, .container-post{
     display:flex;
     justify-content: space-between;
     width: 1060px;
     height: 696px;
-    margin-top: 41px;
+    padding-top: 41px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 145px;
    
 }       
 
-.list-result{
+.list-result, .post-box1{
     width: 640px;
     height: 696px;
     line-height: 43.2px;
-    overflow: auto;
-    scrollbar-width: thin;
 }
 
 .item-result{
@@ -32,6 +30,7 @@
 }
 
 .info-result{
+    margin: 0;
     font-weight: lighter;
     font-size: 18px;
     color: #02033B;
@@ -42,7 +41,7 @@
     opacity: 0.5;
 }
 
-.finding-box2{
+.finding-box2, .post-box2{
     display: inline-block;
     border-radius: 10px;
     width: 362px;
