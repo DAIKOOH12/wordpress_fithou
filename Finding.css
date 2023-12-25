@@ -1,11 +1,11 @@
-.title-result{
+.title-result, .title-more{
     margin-top: 96px;
     margin-left: 10%;
     font-size: 28px;
     font-weight: bold;
 }
 
-.container-finding, .container-post{
+.container-finding, .container-post, .container-more{
     display:flex;
     justify-content: space-between;
     width: 1060px;
@@ -17,19 +17,19 @@
    
 }       
 
-.list-result, .post-box1{
+.list-result, .post-box1, .list-more{
     width: 640px;
     height: 696px;
     line-height: 43.2px;
 }
 
-.item-result{
+.item-result, .item-more{
     font-size: 20px;
     font-weight: 600;
     color: #02033B;
 }
 
-.info-result{
+.info-result, .info-more{
     margin: 0;
     font-weight: lighter;
     font-size: 18px;
@@ -41,7 +41,7 @@
     opacity: 0.5;
 }
 
-.finding-box2, .post-box2{
+.finding-box2, .post-box2, .more-box2{
     display: inline-block;
     border-radius: 10px;
     width: 362px;

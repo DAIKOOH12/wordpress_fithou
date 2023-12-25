@@ -5,6 +5,7 @@ main{
 .container-post{
     height: fit-content;
     align-items: center;
+    padding-top: 57px;
 }
 
 .post-box1, .post-box2{
@@ -25,9 +26,10 @@ main{
     border-radius: 0;
 }
 
-.post-item-row1-box2-text{
+.post-item-row1-box2-text li{
     position: relative;
-    left: -2%;
+    max-width: 230px;
+    left: -28px;
 }
 
 .post-title, .post-athor{
@@ -73,8 +75,12 @@ main{
     width: 645px;
     height: fit-content;
     margin-top: 27px;
-    padding-bottom: 37px;
+    padding-bottom: 87px;
     font-size: 18px;
     line-height: 31.2px;
     letter-spacing: 1%;
+}
+
+footer{
+    margin-top: 0;
 }
