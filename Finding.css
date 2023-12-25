@@ -5,7 +5,7 @@
     font-weight: bold;
 }
 
-.container-finding, .container-post, .container-more{
+.container-finding, .container-post, .container-more, .organ-row3{
     display:flex;
     justify-content: space-between;
     width: 1060px;
@@ -17,19 +17,19 @@
    
 }       
 
-.list-result, .post-box1, .list-more{
+.list-result, .post-box1, .list-more, .list-organ-row3-box1{
     width: 640px;
     height: 696px;
     line-height: 43.2px;
 }
 
-.item-result, .item-more{
+.item-result, .item-more, .item-organ{
     font-size: 20px;
     font-weight: 600;
     color: #02033B;
 }
 
-.info-result, .info-more{
+.info-result, .info-more, .info-organ{
     margin: 0;
     font-weight: lighter;
     font-size: 18px;
@@ -41,7 +41,7 @@
     opacity: 0.5;
 }
 
-.finding-box2, .post-box2, .more-box2{
+.finding-box2, .post-box2, .more-box2, .organ-item-row2-box2{
     display: inline-block;
     border-radius: 10px;
     width: 362px;

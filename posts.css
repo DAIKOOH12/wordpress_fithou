@@ -26,13 +26,11 @@ main{
     border-radius: 0;
 }
 
-.post-item-row1-box2-text li{
-    position: relative;
-    max-width: 230px;
-    left: -28px;
+.post-item-row1-box2-text{
+    width: 230px;
 }
 
-.post-title, .post-athor{
+.post-title, .post-athor, .organ-row1-title{
     margin-left: 25px;
     font-size: 24px;
     font-weight: 800;

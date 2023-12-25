@@ -1,0 +1,64 @@
+.organ-row1, .organ-row2{
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.organ-row1{
+    padding-top: 61px;
+}
+
+.organ-row1-title, .organ-find_bar{
+    margin: 0;
+}
+
+.organ-row1-title{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43.2px;
+    color: #135FAB;
+}
+
+.organ-find_bar{
+    width: 329px;
+    height: 44px;
+    background-color: white;
+}
+
+.organ-row2{
+    padding-top: 74px;
+}
+
+.organ-row2-img{
+    width: 694px;
+    height: 413px;
+}
+
+.organ-item-row2-box2{
+    width: 336px;
+    height: 484px;
+}
+
+.organ-item-row2-box2-text{
+    margin-left: 12.79px;
+}
+
+.organ-row3{
+    padding-top: 36px;
+    padding-bottom: 367px;
+}
+
+.title-organ-row3{
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.organ-item-row3-box2_2{
+    margin-top: 37px;
+    background-color: white;
+}

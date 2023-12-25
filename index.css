@@ -124,7 +124,7 @@ body {
     opacity: 0.76;
 }
 
-.find_bar{
+.find_bar, .organ-find_bar{
     display: flex;
     align-items: center;
     margin-top: 34px;
@@ -136,14 +136,14 @@ body {
     border-radius: 10px;
 }
 
-.find_bar-icon1{
+.find_bar-icon1, .organ-find_bar-icon{
     width: 24px;
     height: 24px;
     display: inline-block;
     margin-left: 18px;
 }
 
-.find_bar-text{
+.find_bar-text, .organ-find_bar-text{
     display: inline-block;
     font-size: 20px;
     margin-left: 41px;
@@ -230,7 +230,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.body-item-row1-box2-title, .finding-item-row1-box2-title, .post-item-row1-box2-title, .more-item-row1-box2-title{
+.body-item-row1-box2-title, .finding-item-row1-box2-title, .post-item-row1-box2-title, .more-item-row1-box2-title, .organ-item-row2-box2-title{
     font-size: 24px;
     font-weight: bolder;
     color: #02033B;
@@ -238,12 +238,11 @@ body {
     text-align: center;
 }
 
-.body-item-row1-box2-text, .finding-item-row1-box2-text, .post-item-row1-box2-text, .more-item-row1-box2-text{
+.body-item-row1-box2-text, .finding-item-row1-box2-text, .post-item-row1-box2-text, .more-item-row1-box2-text, .organ-item-row2-box2-text{
     font-size: 16px;
     font-weight: 300;
     width: 258.63px;
     line-height: 28px;
-    margin-left: 28px;
 }
 
 .body-item-row2, .body-item-row3{
@@ -255,12 +254,12 @@ body {
     height: 397px;
 }
 
-.body-item-row2-boxs, .body-item-row3-boxs{
+.body-item-row2-boxs, .body-item-row3-boxs, .organ-item-row3-box2_1{
     width: 332px;
     height: 392px;
 }
 
-.body-item-row2-boxs-title, .partner-title{
+.body-item-row2-boxs-title, .partner-title, .organ-item-row3-box2_1-title{
     color:#02033B;
     font-weight: bold;
     font-size: 24px;
@@ -274,7 +273,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.body-item-row2-boxs-text, .body-item-row3-boxs-text{
+.body-item-row2-boxs-text, .body-item-row3-boxs-text, .organ-item-row3-box2_1-text{
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -283,14 +282,14 @@ body {
     text-overflow: ellipsis;
 }
 
-.body-item-row2-boxs-more{
+.body-item-row2-boxs-more, .organ-item-row3-box2_1-more{
     font-size: 18px;
     font-weight: 600;
     color: #4262FF;
     margin-left: 10px;
 }
 
-.body-item-row3-boxs{
+.body-item-row3-boxs, .organ-item-row3-box2_2{
     height: 361px;
     box-shadow: 
     0px 5px 10px rgba(0, 0, 0, 0.5), 
@@ -299,16 +298,16 @@ body {
     margin-top: 114px;
 }
 
-.body-item-row3-boxs-title{
+.body-item-row3-boxs-title, .organ-item-row3-box2_2-title{
     display: flex;
 }
 
-.body-item-row3-boxs-title-ic{
+.body-item-row3-boxs-title-ic, .organ-item-row3-box2_2-title-ic{
     margin-left: 36px;
     display: inline-block;
 }
 
-.body-item-row3-boxs-title-text{
+.body-item-row3-boxs-title-text, .organ-item-row3-box2_2-title-text{
     display: inline-block;
     margin-left: 16px;
     font-size: 24px;
@@ -316,14 +315,14 @@ body {
     color: #444D61;
 }
 
-.body-item-row3-boxs-text{
+.body-item-row3-boxs-text, .organ-item-row3-box2_2-text{
     width: 275px;
     height: 164px;
     line-height: 1.6;
     word-spacing: 5px;
 }
 
-.body-item-row3-boxs-more{
+.body-item-row3-boxs-more, .organ-item-row3-box2_2-more{
     display: block;
     margin-left: auto;
     margin-right: auto;
