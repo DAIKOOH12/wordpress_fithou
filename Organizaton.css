@@ -1,4 +1,4 @@
-.organ-row1, .organ-row2{
+.organ-row1, .organ-row2, .news-row1{
     width: 1060px;
     display: flex;
     justify-content: space-between;
@@ -6,15 +6,15 @@
     margin-right: auto;
 }
 
-.organ-row1{
+.organ-row1, .news-row1{
     padding-top: 61px;
 }
 
-.organ-row1-title, .organ-find_bar{
+.organ-row1-title, .organ-find_bar, .news-row1-title, .news-find_bar{
     margin: 0;
 }
 
-.organ-row1-title{
+.organ-row1-title, .news-row1-title{
     display: inline-block;
     font-size: 30px;
     font-weight: 600;
@@ -22,7 +22,7 @@
     color: #135FAB;
 }
 
-.organ-find_bar{
+.organ-find_bar, .news-find_bar{
     width: 329px;
     height: 44px;
     background-color: white;
@@ -37,7 +37,7 @@
     height: 413px;
 }
 
-.organ-item-row2-box2{
+.organ-item-row2-box2, .news-item2-box1{
     width: 336px;
     height: 484px;
 }
@@ -58,7 +58,7 @@
     margin-left: 10px;
 }
 
-.organ-item-row3-box2_2{
-    margin-top: 37px;
+.organ-item-row3-box2_2, .news-item2-box3{
+    margin-top: 36px;
     background-color: white;
 }
