@@ -2,35 +2,36 @@ main{
     background-color: #F2F2F2;
 }
 
-.container-post{
+.container-post, .container-teaching{
     height: fit-content;
-    align-items: center;
     padding-top: 57px;
 }
 
-.post-box1, .post-box2{
+.post-box1, .post-box2, .teaching-box1, .teaching-box2{
     background-color: white;
 }
 
-.post-box1{
+.post-box1, .teaching-box1{
+    height: fit-content;
     width: 701px;
-    min-height: 737px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.post-box2{
+.post-box2, .teaching-box2{
     width: 301px;
     height: 629px;
+    margin-top: 35px;
     border-radius: 0;
 }
 
-.post-item-row1-box2-text{
+.post-item-row1-box2-text, .teaching-item-row1-box2-text{
     width: 230px;
 }
 
-.post-title, .post-athor, .organ-row1-title{
+.post-title, .post-athor, .organ-row1-title, .teaching-title, .teaching-athor{
     margin-left: 25px;
     font-size: 24px;
     font-weight: 800;
@@ -39,36 +40,36 @@ main{
     height: fit-content;
 }
 
-.post-athor{
+.post-athor, .teaching-athor{
     display: flex;
 }
 
-.post-athor-logo, .post-athor-info{
+.post-athor-logo, .post-athor-info, .teaching-athor-logo, .teaching-athor-info{
     display: inline-block;
 }
 
-.post-athor-info{
+.post-athor-info, .teaching-athor-info{
     margin-left: 15px;
 }
 
-.post-athor-name, .post-athor-date{
+.post-athor-name, .post-athor-date, .teaching-athor-name, .teaching-athor-date{
     margin: 0;
     line-height: 43.2px;
 }
 
-.post-athor-name{
+.post-athor-name, .teaching-athor-name{
     font-size: 18px;
     font-weight: 600;
 }
 
-.post-athor-date{
+.post-athor-date, .teaching-athor-date{
     margin-top: -15px;
     font-size: 16px;
     font-weight: 200;
     opacity: 0.7;
 }
 
-.post-content{
+.post-content, .teaching-content{
     margin-left: 25px;
     width: 645px;
     height: fit-content;

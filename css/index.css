@@ -1,33 +1,36 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.header-container, .header-title, .header-title-logo1{
+    height: 121px;
 }
 
 .header-container{
-    width: 90%;
-    height: 121px;
     position: relative;
     display: flex;
-    margin-top: 24px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 90%;
+    margin: 24px auto 0 auto;
     align-items: center;
 }
 
-.header-title{
+.header-title, .header-title-logo1, .header-title-text, .header-title-logo2{
     display: inline-block;
+}
+
+.header-title{
     width: 697px;
-    height: 121px;
 }
 
 .header-title-logo1{
-    display: inline-block;
     width: 101px;
-    height: 121px;
 }
 
 .header-title-text{
     position: absolute;
-    display: inline-block;
     color: #007CBA;
     margin-left: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -53,15 +56,13 @@ body {
 
 .header-title-logo2{
     position: absolute;
-    display: inline-block;
     width: 129px;
     height: 81px;
     right: 0%;
 }
 
 .menu{
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin: 50px 0 0 0;
     position: relative;
     background-color: #135FAB;
     display: flex;
@@ -74,14 +75,11 @@ body {
     padding:10px 35px;
     margin: 4.5px 0;
     border-right: 1px solid #FFFFFF;
+    cursor: pointer;
 }
 
 #menu-item8{
     border-right: 0px;
-}
-
-.menu-item :hover{
-    font-weight: bold;
 }
 
 .menu a{
@@ -92,6 +90,9 @@ body {
     color: #FFFFFF;
 }
 
+.menu a:hover{
+    color:#426FFF;
+}
 
 .banner{
     margin-top: 84px;
@@ -100,10 +101,14 @@ body {
     justify-content: center;
 }
 
+.banner-img, .banner-button{
+    height: 519px;
+}
+
 .banner-img{
+    display: none;
     position: absolute;
     width: 1062px;
-    height: 519px;
 }
 
 .banner-button{
@@ -111,10 +116,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 890px;
-    height: 519px;
 }
 
-.banner-button-prev, .banner-button-next{
+.banner-button-all{
+    transition: transform 0.2s ease-in-out;
     width: 14.06px;
     height: 24.41px;
     display: inline-block;
@@ -122,39 +127,75 @@ body {
     border-radius: 50%;
     background-color: #E3F5FF;
     opacity: 0.76;
+    cursor: pointer;
 }
 
-.find_bar, .organ-find_bar, .news-find_bar{
+.banner-button-all:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.find_bar{
     display: flex;
     align-items: center;
-    margin-top: 34px;
+    margin: 34px auto 0 auto;
     width: 1053px;
     height: 80px;
     background-color: #F2F2F2;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
 }
 
-.find_bar-icon1, .organ-find_bar-icon, .news-find_bar-icon{
+.title-all, .post-title-all, .index-item-row1-box1-img{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.title-all:hover, .post-title-all:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.index-item-row1-box1-img:hover, .body-item-more-all-2:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.body-item-more-all-2:hover{
+    opacity: 1;
+}
+
+.find_bar-icon1, .find_bar-text, .find_bar-x{
+    display: inline-block;
+}
+
+.find_bar-icon1, .find_bar-x{
+    cursor: pointer;
+}
+
+.find_bar-icon1{
     width: 24px;
     height: 24px;
-    display: inline-block;
     margin-left: 18px;
 }
 
-.find_bar-text, .organ-find_bar-text, .news-find_bar-text{
-    display: inline-block;
+.find_bar-text{
     font-size: 20px;
     margin-left: 41px;
+    width: 700px;
+    border: 0;
+    outline: none;
+    background-color: #F2F2F2;
+}
+
+.find_bar-text :focus{
+    outline: none;
 }
 
 .find_bar-x{
-    display: inline-block;
     width: 18px;
     height: 18px;
-    margin-left: 625px;
     color: #BDBEC3;
+    margin-left: 5px;
 }
 
 .find_bar-options{
@@ -167,29 +208,92 @@ body {
 .find_bar-icon2{
     width: 24px;
     height: 24px;
-    margin-left: 10px;
-    margin-top: 19px;
-    margin-bottom: 19px;
+    margin: 25px 0 19px 10px;
+    cursor: pointer;
 }
 
-.body-item-row1{
-    margin: 59px auto 0;
+.sub-menu{
+    width: fit-content;
+    position:absolute;
+    opacity: 0;
+    z-index:-1;
+    right: 2%;
+    transition: linear 0.15s;
+    background-color: white;
+}
+
+.sub-menu-item{
+    transition:all linear 0.15s;
+    text-decoration:none;
+    color: black;
+    font-size:16px;
+    padding: 16px 40px;
+    width: 160px;
+    display:block;
+    text-align: center;
+}
+
+.sub-parent:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu-item:hover{
+    z-index:2;
+    opacity:1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.index-item-row1, .index-item-row1-box1{
+    height: 494.5px;
+}
+
+.index-news{
+    display: block;
+    width: 1053px;
+    height: 400px;
+    margin: 50px auto 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.index-news-title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43.2px;
+    text-align: center;
+    color: #02033B;
+}
+
+.index-news-list{
+    display: block;
+    margin: 15px auto;
+    width: 902.96px;
+}
+
+.index-news-list-item{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.index-item-row1{
+    margin: 140px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1059.61px;
-    height: 494.5px;
 }
 
-.body-item-row1-box1{
+.index-item-row1-box1{
     display: inline-block;
     border-radius: 10px;
     width: 728px;
-    height: 494.5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.body-item-row1-box1-title{
+.index-item-row1-box1-title{
     color: #02033B;
     font-weight: bolder;
     font-size: 40px;
@@ -198,22 +302,21 @@ body {
     word-spacing: 0.28px;
 }
 
-.body-item-row1-box1-img{
+.index-item-row1-box1-img{
     display:block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 0 auto;
     width: 628px;
     height: 153px;
 }
 
-.body-item-row1-box1-text{
+.index-item-row1-box1-text{
     display: block;
     margin-left: 100px;
     line-height: 1.5;
     font-size: 16px;
 }
 
-.body-item-row1-box1-more{
+.index-item-row1-box1-more{
     margin-top: 54px;
     text-align: center;
     font-weight: 600;
@@ -221,7 +324,7 @@ body {
     line-height: 0.225;
 }
 
-.body-item-row1-box2{
+.index-item-row1-box2{
     display: inline-block;
     border-radius: 10px;
     width: 301.61px;
@@ -230,7 +333,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.body-item-row1-box2-title, .finding-item-row1-box2-title, .post-item-row1-box2-title, .more-item-row1-box2-title, .organ-item-row2-box2-title, .news-item2-box1-title{
+.body-item-title-all{
     font-size: 24px;
     font-weight: bolder;
     color: #02033B;
@@ -238,14 +341,14 @@ body {
     text-align: center;
 }
 
-.body-item-row1-box2-text, .finding-item-row1-box2-text, .post-item-row1-box2-text, .more-item-row1-box2-text, .organ-item-row2-box2-text, .news-item2-box1-text{
+.body-item-text-all{
     font-size: 16px;
     font-weight: 300;
     width: 258.63px;
     line-height: 28px;
 }
 
-.body-item-row2, .body-item-row3{
+.index-item-row2, .index-item-row3{
     margin: 78.5px auto 0;
     display: flex;
     justify-content: space-between;
@@ -254,26 +357,24 @@ body {
     height: 397px;
 }
 
-.body-item-row2-boxs, .body-item-row3-boxs, .organ-item-row3-box2_1, .news-item2-box2{
+.body-item-box-all, .body-item-box-all-3{
     width: 332px;
     height: 392px;
 }
 
-.body-item-row2-boxs-title, .partner-title, .organ-item-row3-box2_1-title, .news-item2-box2-title{
+.body-item-title-all-2{
     color:#02033B;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     word-spacing: 2.5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 32px;
+    padding: 20px 0 20px 32px;
     border-left: 5px solid #135FAB;
     border-bottom: 1px solid #426FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.body-item-row2-boxs-text, .body-item-row3-boxs-text, .organ-item-row3-box2_1-text, .news-item2-box2-text{
+.body-item-text-all-2{
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -282,32 +383,32 @@ body {
     text-overflow: ellipsis;
 }
 
-.body-item-row2-boxs-more, .organ-item-row3-box2_1-more, .news-item2-box2-more{
+.body-item-more-all{
     font-size: 18px;
     font-weight: 600;
     color: #4262FF;
     margin-left: 10px;
 }
 
-.body-item-row3-boxs, .organ-item-row3-box2_2, .news-item2-box3{
+.body-item-box-all-3{
     height: 361px;
     box-shadow: 
     0px 5px 10px rgba(0, 0, 0, 0.5), 
     -5px 0px 10px rgba(255, 255, 255, 0.5),
     5px 0px 10px rgba(255, 255, 255, 0.5);
-    margin-top: 114px;
+    margin-top: 100px;
 }
 
-.body-item-row3-boxs-title, .organ-item-row3-box2_2-title, .news-item2-box3-title{
+.body-item-title-all-3{
     display: flex;
 }
 
-.body-item-row3-boxs-title-ic, .organ-item-row3-box2_2-title-ic, .news-item2-box3-title-ic{
+.body-title-ic-all-3{
     margin-left: 36px;
     display: inline-block;
 }
 
-.body-item-row3-boxs-title-text, .organ-item-row3-box2_2-title-text, .news-item2-box3-title-text{
+.body-item-title-text-all-3{
     display: inline-block;
     margin-left: 16px;
     font-size: 24px;
@@ -315,18 +416,16 @@ body {
     color: #444D61;
 }
 
-.body-item-row3-boxs-text, .organ-item-row3-box2_2-text, .news-item2-box3-text{
+.body-item-text-all-3{
     width: 275px;
     height: 164px;
     line-height: 1.6;
     word-spacing: 5px;
 }
 
-.body-item-row3-boxs-more, .organ-item-row3-box2_2-more, .news-item2-box3-more{
+.body-item-more-all-2{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 28px;
+    margin: 28px auto 0 auto;
     width: 125.59px;
     height: 54.5px;
     border-radius: 42px;
@@ -337,17 +436,18 @@ body {
 
 .partner{         
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 155px auto 0 auto;
     width: 1059.61px;
     height: 68px;
-    margin-top: 155px;
 }
+
+.partner-title{
+    width:432px;
+}
+
 .partner-list{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 38px;
+    margin: 38px auto 0 auto;
     width: 1058px;
     height: 332px;
     background-color: #BCBCBC;
@@ -356,8 +456,7 @@ body {
 .partner-list-text{
     font-size: 24px;
     font-weight: bold;
-    padding-top: 69px;
-    padding-left: 77px;
+    padding: 69px 0 0 77px;
     line-height: 28px;
     word-spacing: 2.5px;
 }

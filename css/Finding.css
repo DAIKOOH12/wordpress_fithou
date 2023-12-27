@@ -1,35 +1,34 @@
-.title-result, .title-more{
-    margin-top: 96px;
-    margin-left: 10%;
+.list-title-all{
+    display: block;
+    width: 1053px;
+    margin: 96px auto 0 auto;
     font-size: 28px;
     font-weight: bold;
 }
 
-.container-finding, .container-post, .container-more, .organ-row3{
+.container-list-all{
     display:flex;
     justify-content: space-between;
     width: 1060px;
     height: 696px;
-    padding-top: 41px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 145px;
+    padding: 41px 0 145px 0;
+    margin: 0 auto 0 auto;
    
 }       
 
-.list-result, .post-box1, .list-more, .list-organ-row3-box1{
+.list-all{
     width: 640px;
     height: 696px;
     line-height: 43.2px;
 }
 
-.item-result, .item-more, .item-organ{
+.list-item-all{
     font-size: 20px;
     font-weight: 600;
     color: #02033B;
 }
 
-.info-result, .info-more, .info-organ{
+.list-info-all{
     margin: 0;
     font-weight: lighter;
     font-size: 18px;
@@ -41,7 +40,7 @@
     opacity: 0.5;
 }
 
-.finding-box2, .post-box2, .more-box2, .organ-item-row2-box2, .news-item2-box1{
+.container-box-all{
     display: inline-block;
     border-radius: 10px;
     width: 362px;

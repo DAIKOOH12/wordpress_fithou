@@ -1,4 +1,4 @@
-.news-container{
+.news-container, .science-container{
     width: 1060px;
     margin-top: 74px;
     display: flex;
@@ -7,28 +7,35 @@
     margin-right: auto;
 }
 
-.news-item2-box2{
+.news-item2-box2, .science-item2-box2{
     margin-top: 36px;
 }
 
-.news-item1-title{
+.news-item1-title, .science-item1-title{
     margin-top: 48px;
 }
 
-.news-item1-title-topic{
+#news-item1-title1, #science-item1-title1{
+    margin-top: 0;
+}
+
+
+.news-item1-title-topic, .science-item1-title-topic{
     display: flex;
     align-items: center;
 }
 
-.news-item1-title-logo{
+.news-item1-title-logo, .news-item1-title-text, .science-item1-title-logo, .science-item1-title-text{
     display: inline-block;
+}
+
+.news-item1-title-logo, .science-item1-title-logo{
     width: 100px;
     height: 94px;
 }
 
-.news-item1-title-text{
-    display: inline-block;
-    width: 540px;
+.news-item1-title-text, .science-item1-title-text{
+    width: 645px;
     height: 76px;
     font-size: 18px;
     line-height: 43.2px;
@@ -39,7 +46,7 @@
     text-overflow: ellipsis;
 }
 
-.news-item1-title-date{
+.news-item1-title-date, .science-item1-title-date{
     width: 645px;
     margin-top: 10px;
     padding-bottom: 15px;
@@ -48,8 +55,7 @@
 }
 
 .page_footer{
-    padding-top: 48px;
-    padding-bottom: 67px;
+    padding-top: 48px 0 67px 0;
     color: #135FAB;
     text-align: center;
     line-height: 32px;

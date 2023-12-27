@@ -1,20 +1,29 @@
-.organ-row1, .organ-row2, .news-row1{
+.row1-all, .organ-row2, .container-list-all{
     width: 1060px;
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
-.organ-row1, .news-row1{
+.container-list-all{
+    padding-bottom: 300px;
+    min-height: 750px;
+}
+
+.row1-all{
     padding-top: 61px;
 }
 
-.organ-row1-title, .organ-find_bar, .news-row1-title, .news-find_bar{
+.row1-all-title, .find_bar{
     margin: 0;
 }
 
-.organ-row1-title, .news-row1-title{
+
+.find_bar-text{
+    background-color: white;
+}
+
+.row1-all-title{
     display: inline-block;
     font-size: 30px;
     font-weight: 600;
@@ -22,7 +31,7 @@
     color: #135FAB;
 }
 
-.organ-find_bar, .news-find_bar{
+.find_bar{
     width: 329px;
     height: 44px;
     background-color: white;
@@ -33,13 +42,14 @@
 }
 
 .organ-row2-img{
-    width: 694px;
+    min-width: 694px;
     height: 413px;
 }
 
-.organ-item-row2-box2, .news-item2-box1{
+.container-box-all{
     width: 336px;
     height: 484px;
+    margin-right: 0;
 }
 
 .organ-item-row2-box2-text{
@@ -47,18 +57,16 @@
 }
 
 .organ-row3{
-    padding-top: 36px;
-    padding-bottom: 367px;
+    padding-top: 36px 0 0 367px;
 }
 
 .title-organ-row3{
-    margin-top: 0;
+    margin: 0 0 0 10px;
     font-size: 24px;
     font-weight: 600;
-    margin-left: 10px;
 }
 
-.organ-item-row3-box2_2, .news-item2-box3{
+.body-item-box-all-3{
     margin-top: 36px;
     background-color: white;
 }
