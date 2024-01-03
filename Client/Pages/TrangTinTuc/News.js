@@ -15,12 +15,15 @@ const butFind = document.querySelector('.find_bar-icon1');
 const newsItemTitle = document.querySelectorAll(".news-item1-title");
 const formSearch = document.querySelector(".find_bar");
 
-const regex = new RegExp(currentUrl.searchParams.get('keyword'), "i");
+
+if(currentUrl.searchParams.get('keyword')){
+    const regex = new RegExp(currentUrl.searchParams.get('keyword'), "i");
     for (const it of newsItemTitle) {
         if(!it.querySelector(".post-title-all").textContent.match(regex))
             it.style.display = "none";
         else it.style.display = "block";
     }
+}
 
 if(formSearch){
     let url = new URL(window.location.href);
