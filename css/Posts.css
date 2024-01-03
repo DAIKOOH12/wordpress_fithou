@@ -40,6 +40,10 @@ main{
     height: fit-content;
 }
 
+.post-title{
+    padding-right: 25px;
+}
+
 .post-athor, .teaching-athor{
     display: flex;
 }

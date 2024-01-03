@@ -1,5 +1,6 @@
 .news-container, .science-container{
     width: 1060px;
+    min-height: 1400px;
     margin-top: 74px;
     display: flex;
     justify-content: space-between;
@@ -54,10 +55,22 @@
     border-bottom: 1px solid #817777;
 }
 
-.page_footer{
-    padding-top: 48px 0 67px 0;
+.pagination{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: #135FAB;
     text-align: center;
     line-height: 32px;
     word-spacing: 15.28px;
+}
+
+.page-item{
+    padding: 48px 15px 0 15px;
+    cursor: pointer;
+}
+
+#page-item1{
+    border-bottom: 1px solid #135FAB;
 }

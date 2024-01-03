@@ -1,46 +1,3 @@
-//Cac Su Kien Trên Banner
-let i = 0; 
-const images = document.querySelectorAll('.banner-img'); 
-
-showImage = (index) => {
-    images[index].style.display = 'block';
-}
-
-nextImage = () => {
-    images[i].style.display = 'none';
-    if(i < images.length - 1){
-        i++
-    }
-    else i = 0;
-    showImage(i);
-}
-
-showImage(0);
-const interval = setInterval(nextImage, 5000);
-
-const prev = document.querySelector('.banner-button-prev');
-prev.addEventListener("click", () => {
-    images[i].style.display = 'none';
-    if(i == 0){
-        i = images.length - 1;
-    }
-    else i--;
-    showImage(i);
-    clearInterval(interval);
-});
-
-const next = document.querySelector('.banner-button-next');
-next.addEventListener("click", () => {
-    images[i].style.display = 'none';
-    if(i == images.length - 1){
-        i = 0;
-    }
-    else i++;
-    showImage(i);
-    clearInterval(interval);
-});
-//End Cac Su Kien Tren Banner
-
 //Cac Su Kien Tren Thanh Tim Kiêm
 const txtFind = document.querySelector('.find_bar-text');
 const butFind = document.querySelector('.find_bar-icon1');
@@ -100,7 +57,10 @@ const setPostTitle = (e) => {
 
 const postTitle = document.querySelectorAll('.post-title-all');
 
-setPostTitle(postTitle);
+if(postTitle.length <= 0 ){
+    window.location.href = '/Client/Pages/TrangTimKiem/KhongTimThay/CantFind.html';
+}
+else setPostTitle(postTitle);
 
 //Su Kien click vao o Tin Tuc tren thanh menu
 const postNews = document.querySelector("#menu-item5");
@@ -108,11 +68,3 @@ postNews.addEventListener("click", () => {
     window.location.href = "../TrangTinTuc/News.html";
 });
 //End Su Kien click vao o Tin Tuc tren thanh menu
-
-
-//Su Kien click vao anh Elearning
-const eLearning = document.querySelector('.index-item-row1-box1-img');
-eLearning.addEventListener("click", () => {
-    window.location.href = "https://daihocmohanoi.edu.vn/";
-});
-//End Su Kien click vao anh Elearning

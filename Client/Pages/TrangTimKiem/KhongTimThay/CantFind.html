@@ -27,34 +27,32 @@
             <li class="menu-item" id="menu-item2"><a href="../../TrangGioiThieu/Introduce.html">GIỚI THIỆU</a></li>
             <li class="menu-item" id="menu-item3"><a href="../../TrangToChuc/Organization.html">TỔ CHỨC</a></li>
             <li class="menu-item" id="menu-item4"><a href="../../TrangDaoTao/Teaching.html">ĐÀO TẠO</a></li>
-            <li class="menu-item" id="menu-item5"><a href="../TrangTinTuc/News.html">TIN TỨC</a></li>
-            <li class="menu-item" id="menu-item6"><a href="../TrangNCKH/Science.html">NCKH</a></li>
+            <li class="menu-item" id="menu-item5"><a href="../../TrangTinTuc/News.html">TIN TỨC</a></li>
+            <li class="menu-item" id="menu-item6"><a href="../../TrangNCKH/Science.html">NCKH</a></li>
             <li class="menu-item" id="menu-item7"><a href="#">CỰU SINH VIÊN</a></li>
             <li class="menu-item" id="menu-item8"><a href="../../TrangLienHe/Contact.html">LIÊN HỆ</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="find_bar" id="find_bar">
+        <form class="find_bar find_bar-cantfind" id="find_bar-cantfind">
             <img class="find_bar-icon1 cantfind-find_bar-icon1" id="cantfind-find_bar-icon1" src="../../../../svg/circum_search.svg">
-            <p class="find_bar-text cantfind-finding-find_bar-text" id="cantfind-find_bar-text">Tìm Kiếm...</p>
-            <img class="find_bar-x cantfind-finding-find_bar-x" id="cantfind-find_bar-x" src="../../../../svg/Vector3.svg">
-            <p class="find_bar-options cantfind-finding-find_bar-options" id="cantfind-find_bar-options">Chuyên Mục</p>
-            
+            <input type="text" class="find_bar-text cantfind-find_bar-text" id="cantfind-find_bar-text" placeholder="Tìm Kiếm..."></input>
+            <img class="find_bar-x cantfind-find_bar-x" id="cantfind-find_bar-x" src="../../../../svg/Vector3.svg">
             <div class="sub-parent">
-                <img class="find_bar-icon2 index-find_bar-icon2" id="index-find_bar-icon2" src="../../../../svg/mingcute_right-line.svg">
+                <p class="find_bar-options cantfind-find_bar-options" id="cantfind-find_bar-options">Chuyên Mục</p>
+                <img class="find_bar-icon2 cantfind-find_bar-icon2" id="cantfind-find_bar-icon2" src="../../../../svg/mingcute_right-line.svg">
 
                 <div class="sub-menu">
-                    <div><a class="sub-menu-item" href="#">Tin Hoạt Động</a></div>
-                    <div><a class="sub-menu-item" href="#">Tin Đào Tạo</a></div>
-                    <div><a class="sub-menu-item" href="#">Kế Hoạch</a></div>
-                    <div><a class="sub-menu-item" href="#">Tốt Nghiệp</a></div>
-                    <div><a class="sub-menu-item" href="#">Tuyển Dụng</a></div>
-                    <div><a class="sub-menu-item" href="#">Quy Định và Biểu Mẫu</a></div>
+                    <div><p class="title-all sub-menu-item">Tin Hoạt Động</p></div>
+                    <div><p class="title-all sub-menu-item">Tin Đào Tạo</p></div>
+                    <div><p class="title-all sub-menu-item">Kế Hoạch</p></div>
+                    <div><p class="title-all sub-menu-item">Tốt Nghiệp</p></div>
+                    <div><p class="title-all sub-menu-item">Tuyển Dụng</p></div>
+                    <div><p class="title-all sub-menu-item">Quy Định và Biểu Mẫu</p></div>
                 </div>
             </div>
-            
-        </div>
+        </form>
 
         <p class="text-cantfind" id="text-cantfind">Không tìm thấy kết quả  cho từ khóa của bạn</p>
         <img class="pic-cantfind" id="pic-cantfind" src="../../../../image/9169251 1.png">
@@ -68,4 +66,5 @@
             Khu Giảng Đường: 96 Định Công - Hà Nội</p>
     </footer>
 </body>
+<script src="cantfind.js"></script>
 </html>

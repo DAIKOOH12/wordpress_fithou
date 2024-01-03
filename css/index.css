@@ -3,6 +3,7 @@ body {
     width: 100%;
     position: relative;
     margin: 0 auto 0 auto;
+    padding: 0;
 }
 
 .header-container, .header-title, .header-title-logo1{
@@ -90,8 +91,13 @@ body {
     color: #FFFFFF;
 }
 
-.menu a:hover{
-    color:#426FFF;
+.menu li:hover a{
+    color:#02033B;
+    background-color: #FFFFFF;
+}
+
+.menu li:hover {
+    background-color: #FFFFFF;
 }
 
 .banner{
@@ -208,16 +214,21 @@ body {
 .find_bar-icon2{
     width: 24px;
     height: 24px;
-    margin: 25px 0 19px 10px;
+    margin: 23px 19px;
     cursor: pointer;
+}
+
+.sub-parent{
+    display: flex;
+    flex-direction: row;
 }
 
 .sub-menu{
     width: fit-content;
     position:absolute;
+    margin-top: 80px;
     opacity: 0;
     z-index:-1;
-    right: 2%;
     transition: linear 0.15s;
     background-color: white;
 }
@@ -397,6 +408,7 @@ body {
     -5px 0px 10px rgba(255, 255, 255, 0.5),
     5px 0px 10px rgba(255, 255, 255, 0.5);
     margin-top: 100px;
+    border-radius: 10px;
 }
 
 .body-item-title-all-3{
@@ -409,6 +421,10 @@ body {
 }
 
 .body-item-title-text-all-3{
+    width: 215px;
+    white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis;
     display: inline-block;
     margin-left: 16px;
     font-size: 24px;
@@ -485,4 +501,143 @@ footer{
     line-height: 32px;
     font-weight: 600;
     word-spacing: 0.28px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-container, .header-title, .header-title-logo1{
+        height: 67px;
+    }
+    
+    .header-container{
+        position: relative;
+        display: flex;
+        width: 90%;
+        margin: 12px auto 0 auto;
+        align-items: center;
+    }
+    
+    .header-title, .header-title-logo1, .header-title-text, .header-title-logo2{
+        display: inline-block;
+    }
+    
+    .header-title{
+        width: 182px;
+    }
+    
+    .header-title-logo1{
+        width: 56px;
+        height: 67px;
+    }
+    
+    .header-title-text{
+        position: absolute;
+        color: #007CBA;
+        margin: 0 0 0 13px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header-title-text-line1{
+        font-size: 11px;
+        line-height: 1.293;
+        word-spacing: 0.09;
+    }
+    
+    .header-title-text-line2{
+        font-size:9px;
+        line-height: 1.303;
+        word-spacing: 0.09;
+    }
+    
+    .header-title-text-line3{
+        font-size: 6.5px;
+        line-height: 1.303;
+        word-spacing: 0.02;
+    }
+    
+    .header-title-logo2{
+        position: absolute;
+        width: 59px;
+        height: 37px;
+        right: 0%;
+    }
+    
+    .menu{
+        display: none;
+    }
+    
+    .banner{
+        margin-top: 17px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-button-all{
+        display: none;
+    }
+    
+    .banner-img{
+        width: 379px;
+        height: 167px;
+    }
+    
+    .find_bar{
+        display: flex;
+        align-items: center;
+        margin: 17px auto 0 auto;
+        width: 100%;
+        height: 44px;
+        background-color:#135FAB;
+    }
+    
+    .title-all, .post-title-all, .index-item-row1-box1-img{
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .title-all:hover, .post-title-all:hover{
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    
+    .index-item-row1-box1-img:hover, .body-item-more-all-2:hover{
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+    
+    .body-item-more-all-2:hover{
+        opacity: 1;
+    }
+    
+    .find_bar-icon1, .find_bar-text, .find_bar-x{
+        display: inline-block;
+    }
+    
+    .find_bar-icon1, .find_bar-x{
+        cursor: pointer;
+    }
+    
+    .find_bar-icon1{
+        width: 16px;
+        height: 16px;
+        margin-left: 50px;
+    }
+    
+    .find_bar-text{
+        font-size: 12px;
+        margin-left: 15px;
+        width: 61px;
+        border: 0;
+        outline: none;
+        color: #FFFFFF;
+        background-color:#135FAB;
+    }
+    
+    .find_bar-text :focus{
+        outline: none;
+    }
+    
+    .find_bar-x{
+        display: none;
+    }
 }
