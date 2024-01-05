@@ -12,8 +12,8 @@ main{
 }
 
 .post-box1, .teaching-box1{
-    height: fit-content;
-    width: 701px;
+    margin: 0 auto 0 auto;
+    width: 1060px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -36,11 +36,11 @@ main{
     font-size: 24px;
     font-weight: 800;
     line-height: 43.2px;
-    max-width: 676px;
+    width: fit-content;
     height: fit-content;
 }
 
-.post-title{
+.post-title, .teaching-title{
     padding-right: 25px;
 }
 
@@ -74,14 +74,21 @@ main{
 }
 
 .post-content, .teaching-content{
-    margin-left: 25px;
-    width: 645px;
+    padding: 27px 25px;
+    width: fit-content;
     height: fit-content;
-    margin-top: 27px;
     padding-bottom: 87px;
     font-size: 18px;
     line-height: 31.2px;
     letter-spacing: 1%;
+}
+
+.index-news{
+    background: white;
+}
+
+.space{
+    height: 59px;
 }
 
 footer{
