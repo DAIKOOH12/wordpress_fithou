@@ -7,16 +7,77 @@ body {
     padding: 0;
 }
 
-html{
-    font-size: 10px;
-}
-
-/* Tablet */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
     html{
-        font-size: 7px;
+      font-size: 8px;
     }
-}
+
+    .banner {
+        width: 80%;
+        max-width: 1062px;
+        height: 340px; 
+      }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1440px) {
+    html{
+      font-size: 10px;
+    }
+
+    .banner {
+        width: 80%;
+        max-width: 1062px;
+        height: 520px; 
+      }
+  }
+  
+  @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    html{
+      font-size: 12px;
+    }
+
+    .banner{
+        width: 80%;
+        max-width: 1062px;
+        height: 520px; 
+    }
+  }
+  
+  @media screen and (min-width: 1921px) and (max-width: 2560px) {
+    html{
+      font-size: 14px;
+    }
+
+    .banner{
+        width: 60%; 
+        max-width: 1062px;
+        height: 430px;
+    }
+  }
+  
+  @media screen and (min-width: 2561px) and (max-width: 2880px) {
+    html{
+      font-size: 16px;
+    }
+
+    .banner{
+        width: 60%;
+        max-width: 1062px;
+        height: 430px;
+    }
+  }
+  
+  @media screen and (min-width: 2881px) {
+    html{
+      font-size: 18px;
+    }
+
+    .banner{
+        width: 50%;
+        max-width: 1062px;
+        height: 390px;
+    }
+  }
 
 .header-container, .header-title, .header-title-logo1{
     height: fit-content;
@@ -115,8 +176,6 @@ html{
 
 .banner{
     margin: 5% auto 0 auto;
-    width: 80%;
-    height: 80vh;
     position: relative;
     display: flex;
     justify-content: center;
