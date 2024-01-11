@@ -9,6 +9,18 @@ body {
 
 @media screen and (max-width: 990px) {
     html{
+      font-size: 6px;
+    }
+
+    .banner {
+        width: 80%;
+        max-width: 1062px;
+        height: 340px; 
+      }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1090px) {
+    html{
       font-size: 8px;
     }
 
@@ -19,7 +31,7 @@ body {
       }
   }
 
-@media screen and (min-width: 991px) and (max-width: 1440px) {
+@media screen and (min-width: 1091px) and (max-width: 1440px) {
     html{
       font-size: 10px;
     }
@@ -332,7 +344,7 @@ body {
 }
 
 .index-item-row1, .index-item-row1-box1{
-    height: 80vh;
+    height: 80%;
 }
 
 .index-news{
@@ -542,7 +554,7 @@ body {
 }
 
 .partner-title{
-    width:40%;
+    width:50%;
 }
 
 .partner-list{
