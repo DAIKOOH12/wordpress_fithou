@@ -1,25 +1,30 @@
 .container-more{
-    margin-top: 119px;
-    padding-bottom: 248px;
+    margin-top: 5%;
+    padding-bottom: 5%;
     padding-top: 0;
+    width: 80vw;
+    height: fit-content;
 }
 
 .title-more{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 241.61px;
-    height: 62.24px;
+    width: 30%;
+    height: fit-content;
     margin-top: 0;
-    margin-left: 15px;
-    font-size: 20px;
+    margin-left: 2%;
+    font-size: 2rem;
     font-weight: 600;
     background-color: #135FAB;
     color: white;
     border-radius: 10px;
 }
 
-
 #item-more1{
-    padding-top: 24.46px;
+    padding-top: 5%;
+}
+
+.more-box2{
+    margin-top: 12%;
 }

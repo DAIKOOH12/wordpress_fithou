@@ -1,15 +1,15 @@
 main{
-    width: 1076px;
+    width: 80%;
     margin: 0 auto 0 auto;
 }
 
 .introduce-title{
     display: block;
-    margin-top: 54px;
+    margin-top: 5%;
 }
 
 .introduce-title p, .introduce-title-text, .introduce-title-date, .introduce-item-title, .introduce-item-info, .introduce-item-photo-info{
-    line-height: 43.2px;
+    line-height: 4.32rem;
 }
 
 .introduce-title p, .introduce-item-title, .introduce-item-info{
@@ -17,36 +17,36 @@ main{
 }
 
 .introduce-title-text{
-    font-size: 30px;
+    font-size: 3rem;
     color: #135FAB;
     font-weight: 700;
 }
 
 .introduce-title-date{
-    font-size: 20px;
+    font-size: 2rem;
     color: #02033B;
     opacity: 0.5;
 }
 
 .introduce-item{
-    margin-top: 44px;
+    margin-top: 4%;
 }
 
 .introduce-item-title{
-    max-width: 945px;
+    max-width: 85%;
     height: fit-content;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .introduce-item-info{
-    max-width: 1061;
+    width: 100%;
     height: fit-content;
     font-size: 18px;
 }
 
 #introduce-item1{
-    margin-top: 79px;
+    margin-top: 7%;
 }
 
 #introduce-item1-title{
@@ -54,24 +54,18 @@ main{
 }
 
 #introduce-item1-info{
-    margin-top: 44px;
+    margin-top: 3%;
 }
 
 .introduce-item-img{
-    margin-top: 44px;
-    width: 1058px;
-    height: 646px;
+    margin-top: 3%;
+    width: 100%;
+    height: fit-content;
 }
 
 .introduce-item-photo-info{
     margin: 0 auto 0 auto;
-    max-width: 696px;
     height: fit-content;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
-}
-
-#introduce-item7-info2{
-    margin-top: 44px;
-    padding-bottom: 34pxs;
 }

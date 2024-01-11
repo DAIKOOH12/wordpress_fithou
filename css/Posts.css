@@ -4,7 +4,7 @@ main{
 
 .container-post, .container-teaching{
     height: fit-content;
-    padding-top: 57px;
+    padding-top: 5%;
 }
 
 .post-box1, .post-box2, .teaching-box1, .teaching-box2{
@@ -13,35 +13,20 @@ main{
 
 .post-box1, .teaching-box1{
     margin: 0 auto 0 auto;
-    width: 1060px;
+    width: 80%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.post-box2, .teaching-box2{
-    width: 301px;
-    height: 629px;
-    margin-top: 35px;
-    border-radius: 0;
-}
-
-.post-item-row1-box2-text, .teaching-item-row1-box2-text{
-    width: 230px;
-}
-
 .post-title, .post-athor, .organ-row1-title, .teaching-title, .teaching-athor{
-    margin-left: 25px;
-    font-size: 24px;
+    margin-left: 5%;
+    font-size: 2.4rem;
     font-weight: 800;
-    line-height: 43.2px;
-    width: fit-content;
+    line-height: 4.32rem;
+    width: 90%;
     height: fit-content;
-}
-
-.post-title, .teaching-title{
-    padding-right: 25px;
 }
 
 .post-athor, .teaching-athor{
@@ -52,43 +37,44 @@ main{
     display: inline-block;
 }
 
+.post-athor-logo, .teaching-athor-logo{
+    width: 6rem;
+    height: 6rem;
+}
+
 .post-athor-info, .teaching-athor-info{
-    margin-left: 15px;
+    margin-left: 1.5%;
 }
 
 .post-athor-name, .post-athor-date, .teaching-athor-name, .teaching-athor-date{
     margin: 0;
-    line-height: 43.2px;
+    line-height: 4.32rem;
 }
 
 .post-athor-name, .teaching-athor-name{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .post-athor-date, .teaching-athor-date{
-    margin-top: -15px;
-    font-size: 16px;
+    margin-top: -15%;
+    font-size: 1.6rem;
     font-weight: 200;
     opacity: 0.7;
 }
 
 .post-content, .teaching-content{
-    padding: 27px 25px;
-    width: fit-content;
+    margin: 0 auto;
+    width: 90%;
     height: fit-content;
-    padding-bottom: 87px;
-    font-size: 18px;
-    line-height: 31.2px;
+    padding-bottom: 5%;
+    font-size: 1.8rem;
+    line-height: 3.12rem;
     letter-spacing: 1%;
 }
 
 .index-news{
     background: white;
-}
-
-.space{
-    height: 59px;
 }
 
 footer{

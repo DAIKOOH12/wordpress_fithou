@@ -1,29 +1,29 @@
 .list-title-all{
     display: block;
-    width: 1053px;
-    margin: 96px auto 0 auto;
-    font-size: 28px;
+    width: 75%;
+    margin: 5% auto 0 auto;
+    font-size: 2.8em;
     font-weight: bold;
 }
 
 .container-list-all{
     display:flex;
     justify-content: space-between;
-    width: 1060px;
-    height: 696px;
-    padding: 41px 0 145px 0;
+    width: 80%;
+    height: fit-content;
+    padding: 2% 0 10% 0;
     margin: 0 auto 0 auto;
    
 }       
 
 .list-all{
-    width: 640px;
-    height: 696px;
-    line-height: 43.2px;
+    width: 65%;
+    height: fit-content;
+    line-height: 4em;
 }
 
 .list-item-all{
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 600;
     color: #02033B;
 }
@@ -31,9 +31,9 @@
 .list-info-all{
     margin: 0;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.8em;
     color: #02033B;
-    line-height: 43.2px;
+    line-height: 3rem;
     white-space: nowrap;         
     overflow: hidden;           
     text-overflow: ellipsis; 
@@ -41,10 +41,10 @@
 }
 
 .container-box-all{
+    margin-top: 2%;
     display: inline-block;
     border-radius: 10px;
-    width: 362px;
-    height: 629px;
-    margin-right: 5px;
+    width: 30%;
+    height: fit-content;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

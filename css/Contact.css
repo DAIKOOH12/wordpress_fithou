@@ -1,18 +1,26 @@
 .container-list-all{
-    height: 1265px;
+    height: fit-content;
 }
 
 .contact-info-list li{
-    line-height: 43.2px;
+    line-height: 4.32rem;
 }
 
 .contact-info-title{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-top: 0;
 }
 
 .contact-info-list-item, .contact-info-list-item-listchild-item{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.list-contact-row3-box1{
+    width: 60%;
+}
+
+.list-contact-row3-box2{
+    width: 32%;
 }
