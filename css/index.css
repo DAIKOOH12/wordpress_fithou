@@ -7,7 +7,21 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 575px) {
+    .banner {
+        width: 80%;
+        height: 240px; 
+      }
+  }
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .banner {
+        width: 80%;
+        height: 300px; 
+      }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
     html{
       font-size: 6px;
     }
@@ -149,7 +163,7 @@ body {
 
 .menu{
     width: 100vw;
-    margin: 3% 0 0 0;
+    padding: 0;
     position: relative;
     background-color: #135FAB;
     display: flex;
@@ -160,7 +174,6 @@ body {
 .menu-item{
     display: inline-block;
     padding:1rem 3.5rem;
-    margin: 0.5% 0;
     border-right: 1px solid #FFFFFF;
     cursor: pointer;
 }
@@ -509,9 +522,12 @@ body {
 
 .body-item-title-all-3{
     display: flex;
+    margin-top: 10%;
 }
 
 .body-title-ic-all-3{
+    height: 3.284rem;
+    width: 3rem;
     margin-left: 15%;
     display: inline-block;
 }
@@ -522,6 +538,7 @@ body {
     overflow: hidden;   
     text-overflow: ellipsis;
     display: inline-block;
+    margin-top: 0;
     margin-left: 2%;
     font-size: 2.4em;
     font-weight: bold;
@@ -604,3 +621,159 @@ footer{
 .space{
     height: 5vh;
 }
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .body-item-text-all-2{
+        padding-left: 10%;
+    }
+
+    .body-item-text-all-3{
+        padding-left: 15%;
+    }
+  }
+
+@media screen and (max-width: 793px) {
+    html{
+        font-size: 7.5px;
+      }
+
+      .header-title-text-line1{
+        font-size: 18px;
+    }
+
+    .header-title-text-line2{
+        font-size: 14px;
+    }
+
+    .header-title-text-line3{
+        font-size: 10px;
+    }
+      
+    .menu{
+        display: none;
+    }
+
+    .find_bar{
+        background-color: #135FAB;
+        position: absolute;
+        top: 10vh;
+        border-radius: 0;
+        width: 100%;
+        color: #FFFFFF;
+    }
+
+    .find_bar-text{
+        font-size: 12px;
+        width: 70%;
+        background-color: #135FAB;
+        color: #FFFFFF;
+    }
+
+    .find_bar ::placeholder{
+        color: #FFFFFF;
+    }
+
+    .find_bar-icon1, .find_bar-x, .find_bar-icon2{
+        color: #FFFFFF;
+    }
+
+    .banner{
+        margin-top: 11%;
+    }
+
+    .index-item-row2, .index-item-row3, .index-item-row1.box1, .index-item-row1-box2{
+        display: block;
+    }
+
+    .body-item-box-all, .body-item-box-all-3{
+        display: inline-block;
+        width: 40%;
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+    }
+
+    .index-news-list, .body-item-text-all-2{
+        margin-left: 0;
+    }
+
+    .body-item-text-all-2{
+        padding-left: 10%;
+    }
+
+    .body-item-text-all-3{
+        padding-left: 15%;
+    }
+
+    .index-item-row1-box1{
+        width: 100%;
+    }
+
+    .index-item-row1-box1 li{
+        font-size: 2rem;
+    }
+
+    .index-item-row1-box2{
+        display: none;
+    }
+
+    .body-item-title-all-2{
+        width: 94%;
+    }
+
+    .partner{
+        display: block;
+        width: 78%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  }
+
+  @media screen and (max-width: 575px) {
+    .banner{
+        height: 150px;
+    }
+
+    .banner-button-all{
+        display: none;
+    }
+
+    .find_bar{
+        top: 5vh;
+    }
+
+    .body-item-box-all, .body-item-box-all-3{
+        display: block;
+        width: 100%;
+        margin: 10% auto;
+    }
+
+    .header-title-text-line1{
+        font-size: 11px;
+    }
+
+    .header-title-text-line2{
+        font-size: 9px;
+    }
+
+    .header-title-text-line3{
+        font-size: 6.5px;
+    }
+
+    .find_bar-text{
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .find_bar-options{
+        font-size: 11px;
+    }
+
+    .body-item-text-all-2{
+        padding-left: 10%;
+    }
+
+    .index-item-row1-box1-text{
+        margin-left: 5%;
+    }
+  }
