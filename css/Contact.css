@@ -1,26 +1,136 @@
-.container-list-all{
+.contact-container{
     height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 5%;
 }
 
-.contact-info-list li{
-    line-height: 4.32rem;
-}
-
-.contact-info-title{
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-top: 0;
-}
-
-.contact-info-list-item, .contact-info-list-item-listchild-item{
-    font-weight: 600;
-    font-size: 1.8rem;
-}
-
-.list-contact-row3-box1{
+.contact-col1{
     width: 60%;
 }
 
+.contact-col2{
+    width: 30%;
+}
+
+.container-box-all, .body-item-box-all, .body-item-box-all-3 {
+    width: 100%;
+}
+
+.find_bar{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.find_bar-icon1{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.find_bar-text, .find_bar-text::placeholder{
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.find_bar-text{
+    width: 70%;
+    height: fit-content;
+    margin-left: 5%;
+    background-color: #FFF;
+    padding: 4%;
+}
+
 .list-contact-row3-box2{
-    width: 32%;
+    margin-top: 10%;
+}
+
+.contact-row1-title p{
+    color: #135FAB;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+.container-info{
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-info p{
+    margin: 0;
+    color: #000;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.7rem;
+}
+
+.contact-info li{
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+.news-item1-title{
+    height: fit-content;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.70);
+}
+
+.news-item-title-topic{
+    width: 100%;
+}
+
+.news-item-title-topic p{
+    color: #135FAB;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.7rem;
+}
+
+.news-item1-title-date{
+    width: 100%;
+}
+
+.news-item1-title-date p{
+    display: block;
+    color: #000;
+    font-size: 0.93rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+    text-align: right;
+}
+
+@media screen and (min-width: 794px) and (max-width: 991px) {
+    .contact-container{
+        display: block;
+    }
+
+    .body-item-box-all, .body-item-box-all-3, .find_bar{
+        display: none;
+    }
+
+    .contact-col1{
+        width: 100%;
+    }
+    
+    .contact-col2{
+        width: 100%;
+    }
+
+    .body-item-text-all li{
+        width: 100%;
+    }
 }

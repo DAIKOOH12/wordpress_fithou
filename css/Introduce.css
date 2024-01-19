@@ -8,48 +8,55 @@ main{
     margin-top: 5%;
 }
 
-.introduce-title p, .introduce-title-text, .introduce-title-date, .introduce-item-title, .introduce-item-info, .introduce-item-photo-info{
-    line-height: 4.32rem;
+.introduce-title p, .introduce-title-text p, .introduce-title-date p, .introduce-item-title p, .introduce-item-info p, .introduce-item-photo-info p, .introduce-item-info li{
+    line-height: 2.7rem;
 }
 
 .introduce-title p, .introduce-item-title, .introduce-item-info{
     margin: 0;
 }
 
-.introduce-title-text{
-    font-size: 3rem;
+.introduce-title-text p{
+    font-size: 1.875rem;
     color: #135FAB;
-    font-weight: 700;
+    font-weight: 800;
 }
 
-.introduce-title-date{
-    font-size: 2rem;
+.introduce-title-date p{
+    font-size: 1.25rem;
     color: #02033B;
-    opacity: 0.5;
+    opacity: 0.7;
+    font-style: italic;
 }
 
 .introduce-item{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .introduce-item-title{
-    max-width: 85%;
+    max-width: 100%;
     height: fit-content;
+}
+
+.introduce-item-title p{
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .introduce-item-info{
     width: 100%;
     height: fit-content;
-    font-size: 18px;
+}
+
+.introduce-item-info p, .introduce-item-info li{
+    font-size: 1.125rem;
 }
 
 #introduce-item1{
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
-#introduce-item1-title{
+#introduce-item1-title p{
     font-weight: 800;
 }
 
@@ -57,15 +64,22 @@ main{
     margin-top: 3%;
 }
 
-.introduce-item-img{
+.introduce-item img{
     margin-top: 3%;
     width: 100%;
     height: fit-content;
 }
 
 .introduce-item-photo-info{
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    width: 100%;
     height: fit-content;
-    font-size: 2.4rem;
+}
+
+.introduce-item-photo-info p{
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-style: italic;
     text-align: center;
 }

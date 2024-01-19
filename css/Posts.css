@@ -2,16 +2,16 @@ main{
     background-color: #F2F2F2;
 }
 
-.container-post, .container-teaching{
+.container-post{
     height: fit-content;
     padding-top: 5%;
 }
 
-.post-box1, .post-box2, .teaching-box1, .teaching-box2{
+.post-box1, .post-box2{
     background-color: white;
 }
 
-.post-box1, .teaching-box1{
+ .post-box1{
     margin: 0 auto 0 auto;
     width: 80%;
     height: fit-content;
@@ -20,57 +20,75 @@ main{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.post-title, .post-athor, .organ-row1-title, .teaching-title, .teaching-athor{
-    margin-left: 5%;
-    font-size: 2.4rem;
+.post-title{
+    width: 95%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.post-title p{
+    font-size: 1.5rem;
     font-weight: 800;
-    line-height: 4.32rem;
-    width: 90%;
+    line-height: 1.7rem;
+} 
+
+.post-athor{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+.post-athor-logo, .post-athor-info{
+    display: inline-block;
+    width: fit-content;
     height: fit-content;
 }
 
-.post-athor, .teaching-athor{
-    display: flex;
+.post-athor-logo img{
+    width: 3.75rem;
+    height: 3.75rem;
 }
 
-.post-athor-logo, .post-athor-info, .teaching-athor-logo, .teaching-athor-info{
-    display: inline-block;
+.post-athor-name, .post-athor-date{
+    height: fit-content;
 }
 
-.post-athor-logo, .teaching-athor-logo{
-    width: 6rem;
-    height: 6rem;
+.post-athor-name{
+    margin-top: -15%;
 }
 
-.post-athor-info, .teaching-athor-info{
-    margin-left: 1.5%;
+.post-athor-date{
+    margin-top: -40%;
 }
 
-.post-athor-name, .post-athor-date, .teaching-athor-name, .teaching-athor-date{
+.post-athor-name p{
+    font-size: 1.125rem;
     margin: 0;
-    line-height: 4.32rem;
-}
-
-.post-athor-name, .teaching-athor-name{
-    font-size: 1.8rem;
     font-weight: 600;
 }
 
-.post-athor-date, .teaching-athor-date{
-    margin-top: -15%;
-    font-size: 1.6rem;
-    font-weight: 200;
-    opacity: 0.7;
+.post-athor-date{
+    font-size: 1.125rem;
 }
 
-.post-content, .teaching-content{
+.post-content{
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     height: fit-content;
     padding-bottom: 5%;
-    font-size: 1.8rem;
-    line-height: 3.12rem;
+}
+
+
+.post-content p{
+    font-size: 1.125rem;
+    line-height: 1.95rem;
     letter-spacing: 1%;
+}
+
+.post-content img{
+    width: 90%;
+    height: fit-content;
 }
 
 .index-news{
