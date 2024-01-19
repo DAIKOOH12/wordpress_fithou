@@ -54,14 +54,6 @@ main{
     height: fit-content;
 }
 
-.post-athor-name{
-    margin-top: -15%;
-}
-
-.post-athor-date{
-    margin-top: -40%;
-}
-
 .post-athor-name p{
     font-size: 1.125rem;
     margin: 0;

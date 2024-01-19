@@ -52,6 +52,7 @@
 }
 
 .contact-row1-title p{
+    margin-top: 0;
     color: #135FAB;
     font-size: 1.875rem;
     font-style: normal;
@@ -113,12 +114,22 @@
     text-align: right;
 }
 
-@media screen and (min-width: 794px) and (max-width: 991px) {
+.organ-img img{
+    margin-top: 3%;
+    width: 100%;
+    height: fit-content;
+}
+
+.space0{
+    height: 0.01vh;
+}
+
+@media screen and (max-width: 991px) {
     .contact-container{
         display: block;
     }
 
-    .body-item-box-all, .body-item-box-all-3, .find_bar{
+    .body-item-box-all, .body-item-box-all-3{
         display: none;
     }
 
@@ -132,5 +143,24 @@
 
     .body-item-text-all li{
         width: 100%;
+    }
+
+    .nav-response{
+        width: 100%;
+        border-radius: 0;
+        background-color: #135FAB;
+        height: fit-content;
+    }
+
+    .find_bar{
+        background-color: #135FAB;
+    }
+
+    .find_bar input{
+        padding: 0;
+    }
+
+    .contact-find_bar{
+        display: none;
     }
 }
