@@ -19,32 +19,35 @@
     width: 100%;
 }
 
-.find_bar{
-    width: 100%;
-    background-color: #FFF;
-    border-radius: 10px;
-    height: fit-content;
-}
+@media screen and (min-width: 992px) {
 
-.find_bar-icon1{
-    width: 1.5rem;
-    height: 1.5rem;
-}
+    .find_bar{
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 10px;
+        height: fit-content;
+    }
 
-.find_bar-text, .find_bar-text::placeholder{
-    color: #000;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+    .find_bar-icon1{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-.find_bar-text{
-    width: 70%;
-    height: fit-content;
-    margin-left: 5%;
-    background-color: #FFF;
-    padding: 4%;
+    .find_bar-text, .find_bar-text::placeholder{
+        color: #000;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .find_bar-text{
+        width: 70%;
+        height: fit-content;
+        margin-left: 5%;
+        background-color: #FFF;
+        padding: 4%;
+    }
 }
 
 .list-contact-row3-box2{
@@ -124,6 +127,38 @@
     height: 0.01vh;
 }
 
+
+@media screen and (min-width: 992px) {
+
+    .find_bar{
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 10px;
+        height: fit-content;
+    }
+
+    .find_bar-icon1{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .find_bar-text, .find_bar-text::placeholder{
+        color: #000;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .find_bar-text{
+        width: 70%;
+        height: fit-content;
+        margin-left: 5%;
+        background-color: #FFF;
+        padding: 4%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .contact-container{
         display: block;
@@ -142,7 +177,7 @@
     }
 
     .body-item-text-all li{
-        width: 100%;
+        width: 90%;
     }
 
     .nav-response{
@@ -157,7 +192,7 @@
     }
 
     .find_bar input{
-        padding: 0;
+        padding-left: 0;
     }
 
     .contact-find_bar{
