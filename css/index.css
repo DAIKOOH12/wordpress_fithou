@@ -167,7 +167,7 @@ body {
 .title-all:hover, .body-item-text-all li:hover, .index-news-list li:hover, .body-item-text-all-2 li:hover, .body-item-box-all-3 li:hover, .index-item-row1-box1-text li:hover, .news-item-title-topic p:hover{
     cursor: pointer;
     text-decoration: underline;
-    font-weight: bold;
+    color: #135FAB;
 }
 
 .index-item-row1-box1-img:hover, .body-item-more-all-2:hover{
@@ -390,11 +390,11 @@ body {
     display: flex;
     justify-content: space-between;
     width: 78%;
-    height: fit-content;
 }
 
 .index-item-row2{
     margin: 5% auto 0 auto;
+    height: fit-content;
 }
 
 .index-item-row3{
