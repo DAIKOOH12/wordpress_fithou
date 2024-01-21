@@ -9,7 +9,7 @@ if(formSearch){
         e.preventDefault();
         const title = txtFind.value;
         if(title)
-            window.location.href = '/Client/Pages/TrangTimKiem/TimThay/Finding.html?title=' + encodeURIComponent(title);
+            window.location.href = '/Client/Pages/TrangTimKiem/Finding.html?title=' + encodeURIComponent(title);
     });
 }
 
@@ -58,7 +58,7 @@ const setPostTitle = (e) => {
 const postTitle = document.querySelectorAll('.post-title-all');
 
 if(postTitle.length <= 0 ){
-    window.location.href = '/Client/Pages/TrangTimKiem/KhongTimThay/CantFind.html';
+    window.location.href = '/Client/Pages/TrangTimKiem/CantFind.html';
 }
 else setPostTitle(postTitle);
 
@@ -68,3 +68,13 @@ postNews.addEventListener("click", () => {
     window.location.href = "../TrangTinTuc/News.html";
 });
 //End Su Kien click vao o Tin Tuc tren thanh menu
+
+//NAVBAR START
+const divNavs = document.querySelectorAll(".menu-item")
+divNavs.forEach(item => {
+    item.addEventListener("click", () => {
+        const nextLink = item.querySelector("a");
+        window.location.href = `${nextLink.getAttribute("href")}`;
+    })
+});
+//NAVBAR END

@@ -5,53 +5,19 @@ const currentUrl = new URL(window.location.href);
 const title = currentUrl.searchParams.get('title');
 
 if (title) {
-    postTopic.textContent = title;
+    const topic = postTopic.querySelector("p");
+    topic.textContent = title;
 }
 
-//Cac su kien tim kiem
-const txtFind = document.querySelector('.find_bar-text');
-const butFind = document.querySelector('.find_bar-icon1');
-
-const newsItemTitle = document.querySelectorAll(".news-item1-title");
-const formSearch = document.querySelector(".find_bar");
-
-
-if(currentUrl.searchParams.get('keyword')){
-    const regex = new RegExp(currentUrl.searchParams.get('keyword'), "i");
-    for (const it of newsItemTitle) {
-        if(!it.querySelector(".post-title-all").textContent.match(regex))
-            it.style.display = "none";
-        else it.style.display = "block";
-    }
-}
-
-if(formSearch){
-    let url = new URL(window.location.href);
-    formSearch.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const keyword = txtFind.value;
-        if(keyword){
-            url.searchParams.set("keyword", keyword);
-        }
-        else
-            url.searchParams.delete("keyword");
-
-        window.location.href = url.href;
-    });
-}
-
-txtFind.addEventListener("keydown", (e) => {
-    if(e.key == "Enter")
-        formSearch.submit();
+//NAVBAR START
+const divNavs = document.querySelectorAll(".menu-item")
+divNavs.forEach(item => {
+    item.addEventListener("click", () => {
+        const nextLink = item.querySelector("a");
+        window.location.href = `${nextLink.getAttribute("href")}`;
+    })
 });
-
-butFind.addEventListener("click", () =>{
-    formSearch.submit();
-});
-
-
-
-//End Cac Su Kien Tim Kiem
+//NAVBAR END
 
 //Cac Su Kien khi click vao tieu de Tin Tuc va nut Xem Them tren Trang Chu
 const setNewsTitle = (e) =>{
@@ -71,7 +37,7 @@ const newsTitle = document.querySelectorAll('.title-all');
 setNewsTitle(newsTitle);
 
 
-//Cac Su Kien khi click vào tieu de Bai Viet tren Trang Chu
+//POST TITLE EVENT START
 const setPostTitle = (e) => {
     for (const it of e) {
         it.addEventListener("click", () =>{
@@ -81,10 +47,11 @@ const setPostTitle = (e) => {
 }
 
 const postTitle = document.querySelectorAll('.post-title-all');
-
-//End Cac Su Kien khi click vào tieu de Bai Viet tren Trang Chu
-
 setPostTitle(postTitle);
+
+const postTitleMain = document.querySelectorAll(".news-item-title-topic");
+setPostTitle(postTitleMain);
+//POST TITLE EVENT END
 
 //Cac su kien chan trang
 const paginations = document.querySelectorAll(".page-item");

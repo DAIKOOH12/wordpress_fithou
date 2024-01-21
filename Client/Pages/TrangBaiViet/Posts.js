@@ -5,7 +5,8 @@ const currentUrl = new URL(window.location.href);
 const title = currentUrl.searchParams.get('title');
 
 if (title) {
-    postTopic.textContent = title;
+    const topic = postTopic.querySelector("p");
+    topic.textContent = title;
 }
 
 //Cac Su Kien khi click vao tieu de Tin Tuc va nut Xem Them tren Trang Chu
@@ -25,6 +26,15 @@ const newsTitle = document.querySelectorAll('.title-all');
 
 setNewsTitle(newsTitle);
 
+//NAVBAR START
+const divNavs = document.querySelectorAll(".menu-item")
+divNavs.forEach(item => {
+    item.addEventListener("click", () => {
+        const nextLink = item.querySelector("a");
+        window.location.href = `${nextLink.getAttribute("href")}`;
+    })
+});
+//NAVBAR END
 
 //Cac Su Kien khi click vào tieu de Bai Viet tren Trang Chu
 const setPostTitle = (e) => {

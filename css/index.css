@@ -35,7 +35,7 @@ body {
 
 .header-title .header-title-text{
     position: absolute;
-    height: 100%;
+    height: fit-content;
     max-width: 80%;
     color: #007CBA;
     margin-left: 1.5%;
@@ -164,7 +164,8 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.title-all:hover, .post-title-all:hover{
+.title-all:hover, .body-item-text-all li:hover, .index-news-list li:hover, .body-item-text-all-2 li:hover, .body-item-box-all-3 li:hover, .index-item-row1-box1-text li:hover, .news-item-title-topic p:hover{
+    cursor: pointer;
     text-decoration: underline;
     font-weight: 600;
 }
@@ -376,6 +377,7 @@ body {
     color: #02033B;
     line-height: 2.5rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .body-item-text-all li{
@@ -455,7 +457,7 @@ body {
     width: fit-content;
     white-space: nowrap;
     display: inline-block;
-    margin-top: 0;
+    margin-top: 1%;
     margin-left: 2%;
     font-size: 1.2rem;
     font-weight: bold;

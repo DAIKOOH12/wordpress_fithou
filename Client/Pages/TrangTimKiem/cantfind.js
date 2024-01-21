@@ -9,7 +9,7 @@ if(formSearch){
         e.preventDefault();
         const title = txtFind.value;
         if(title)
-            window.location.href = '/Client/Pages/TrangTimKiem/TimThay/Finding.html?title=' + encodeURIComponent(title);
+            window.location.href = '/Client/Pages/TrangTimKiem/Finding.html?title=' + encodeURIComponent(title);
     });
 }
 
@@ -27,3 +27,13 @@ delFind.addEventListener("click", () => {
 });
 
 //End Su Kien Tim Kiem
+
+//NAVBAR START
+const divNavs = document.querySelectorAll(".menu-item")
+divNavs.forEach(item => {
+    item.addEventListener("click", () => {
+        const nextLink = item.querySelector("a");
+        window.location.href = `${nextLink.getAttribute("href")}`;
+    })
+});
+//NAVBAR END
