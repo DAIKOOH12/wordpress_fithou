@@ -27,6 +27,10 @@ main{
     margin-right: auto;
 } 
 
+.post-athor-info{
+    margin-top: 1%;
+}
+
 .post-title p{
     font-size: 1.5rem;
     font-weight: 800;
