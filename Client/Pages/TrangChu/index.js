@@ -138,24 +138,21 @@ buttonCategory.addEventListener("click", () => {
 })
 
 //Can chinh kich thuoc cac item co phan "xem them"
-window.addEventListener("resize", () => {
-    if(window.innerWidth <= 950 && window.innerWidth >= 479){
-        const itemRow2 = document.querySelectorAll('.index-item-row2-boxs-text');
-        let maxHeight = 0;
-        
-        for (let i = 0; i < itemRow2.length; i++) {
-            const height = itemRow2[i].clientHeight;
-            if (height > maxHeight) {
-                maxHeight = height;
-            }
-        }
-        
-        for (let i = 0; i < itemRow2.length; i++) {
-            itemRow2[i].style.height = maxHeight + 'px';
-        }
-        
-    } else {
-        location.reload();
+const itemRow2 = document.querySelectorAll('.index-item-row2-boxs-text');
+let maxHeight = 0;
+
+for (let i = 0; i < itemRow2.length; i++) {
+    const height = itemRow2[i].clientHeight;
+    if (height > maxHeight) {
+        maxHeight = height;
     }
+}
+
+for (let i = 0; i < itemRow2.length; i++) {
+    itemRow2[i].style.height = maxHeight + 'px';
+}
+
+window.addEventListener("resize", () => {
+    window.location.reload();
 })
 //Can chinh kich thuoc cac item co phan "xem them"
