@@ -11,6 +11,39 @@ a{
     text-decoration: none;
 }
 
+.sider{
+    display: none;
+    z-index: 9999;
+    width: fit-content;
+    position: absolute;
+    transition: linear 0.15s;
+    background-color: #135FAB;
+    overflow: hidden;
+}
+
+.sider-item{
+    width: 100%;
+    transition:all linear 0.15s;
+    text-decoration:none;
+    padding: 1rem 2.5rem;
+    border-bottom: 1px solid #BDBEC3;
+    display:block;
+}
+
+.sider-item a{
+    color: white;
+}
+
+.sider-item:hover{
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sider-item:hover a{
+    color: black;
+    font-weight: bold;
+}
+
 .nav-response{
     display: none;
 }
@@ -81,6 +114,10 @@ a{
     align-items: center;
 }
 
+#menu-item4{
+    cursor: default
+}
+
 .menu-item{
     display: inline-block;
     width: 12%;
@@ -92,11 +129,32 @@ a{
     cursor: pointer;
 }
 
+.menu-item p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #menu-item8{
     border-right: 0px;
 }
 
-.menu a{
+.menu-item-child{
+    display: none;
+}
+
+#menu-item4:hover .menu-item-child{
+    position: absolute;
+    display: flex;;
+    flex-direction: column;
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    top: 100%;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.menu a, .menu-item p{
     font-size: 0.9rem;
     line-height: 1.5;
     font-weight: bold;
@@ -104,13 +162,62 @@ a{
     color: #FFFFFF;
 }
 
-.menu div:hover a{
+.sub-menu-item-child-title a{
+    text-align: left;
+}
+
+.sub-menu-item-child-title, .sub-menu-item-child-href{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.sub-menu-item-child-title p{
+    font-weight: bolder;
+}
+
+.sub-menu-item-child-href a{
+    font-weight: 400;
+}
+
+.menu-item:hover a{
     color:#02033B;
     background-color: #FFFFFF;
 }
 
-.menu div:hover{
+.menu-item:hover p{
+    color:#02033B;
     background-color: #FFFFFF;
+}
+
+.menu-item:hover{
+    background-color: #FFFFFF;
+}
+
+.sub-menu-item-child-title p, .sub-menu-item-child-href a{
+    cursor: pointer;
+}
+
+.sub-menu-item-child-title:hover{
+    background-color: #426FFF;
+}
+
+.sub-menu-item-child-title:hover p{
+    background-color: #426FFF;
+    color: yellow;
+}
+
+.sub-menu-item-child-title:hover a{
+    background-color: #426FFF;
+    color: yellow;
+}
+
+.sub-menu-item-child-href:hover{
+    background-color: #426FFF;
+}
+
+.sub-menu-item-child-href:hover a{
+    background-color: #426FFF;
+    color: yellow;
 }
 
 .banner{
@@ -247,7 +354,7 @@ a{
     width: fit-content;
     position:absolute;
     margin-top: 5%;
-    opacity: 0;
+    display: none;
     z-index:-1;
     transition: linear 0.15s;
     background-color: white;
@@ -263,9 +370,10 @@ a{
     text-align: center;
 }
 
-.sub-parent:hover .sub-menu {
+.sub-parent:hover .sub-menu{
     z-index:1;
-    opacity:1;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .sub-menu-item:hover{
@@ -413,7 +521,7 @@ a{
 
 .body-item-box-all, .body-item-box-all-3{
     width: 30%;
-    grid-template-rows: auto 1fr auto;
+    position: relative;
 }
 
 .body-item-title-all-2{
@@ -791,7 +899,7 @@ footer{
     }
 }
 
-  @media screen and (min-width: 479px) and (max-width: 793px) {
+  @media screen and (min-width: 479px) and (max-width: 950px) {
     html{
         font-size: 1.5vw;
     }
@@ -800,6 +908,10 @@ footer{
         display: block;
         width: 100%;
         background-color: #135FAB;
+    }
+
+    .sub-parent:hover .sub-menu{
+        display: block;
     }
 
     .find_bar{
@@ -872,7 +984,7 @@ footer{
     }
 
     .banner{
-        height: 50vw;
+        height: 40vw;
     }
 
     .body-item-title-all-3{
@@ -888,6 +1000,7 @@ footer{
     }
 
     .body-item-box-all, .body-item-box-all-3{
+        position: relative;
         display: inline-block;
         width: 40%;
         margin-left: 4.5%;
@@ -904,6 +1017,7 @@ footer{
 
     .body-item-text-all-3{
         padding-left: 15%;
+        padding-bottom: 15%;
     }
 
     .index-item-row1-box1{
@@ -960,7 +1074,7 @@ footer{
     }
   }
 
-@media screen and (min-width: 794px) and (max-width: 991px) {
+@media screen and (min-width: 950px) and (max-width: 991px) {
     html{
         font-size: 16px;
     }
@@ -994,6 +1108,12 @@ footer{
         font-size: 1.3rem;
     }
 
+    .see-more-text-parent{
+        position: absolute;
+        width: 100%;
+        bottom: -10%;
+    }
+
     .body-item-title-all-3{
         display: block;
     }
@@ -1014,5 +1134,11 @@ footer{
 
     .banner{
         height: 519px;
+    }
+
+    .see-more-text-parent{
+        position: absolute;
+        width: 100%;
+        bottom: -10%;
     }
   }
