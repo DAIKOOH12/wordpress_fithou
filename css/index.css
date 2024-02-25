@@ -788,10 +788,6 @@ footer{
         margin-left: 0;
     }
 
-    .body-item-title-all-3{
-        display: block;
-    }
-
     .body-title-ic-all-3, .title-all{
         display: block;
     }
@@ -875,10 +871,6 @@ footer{
         width: 90%;
     }
 
-    .body-item-title-text-all-3{
-        width: 90%;
-        margin: 2% auto;
-    }
 
     footer{
         flex-direction: column;
@@ -987,13 +979,6 @@ footer{
         height: 40vw;
     }
 
-    .body-item-title-all-3{
-        display: block;
-    }
-
-    .body-title-ic-all-3, .title-all{
-        display: block;
-    }
 
     .index-item-row2, .index-item-row3, .index-item-row1.box1, .index-item-row1-box2{
         display: block;
@@ -1064,17 +1049,12 @@ footer{
         width: 90%;
     }
 
-    .body-item-title-text-all-3{
-        width: 90%;
-        margin: 2% auto;
-    }
-
     .img-footer{
         width: 12%;
     }
   }
 
-@media screen and (min-width: 950px) and (max-width: 991px) {
+@media screen and (min-width: 950px) and (max-width: 1099px) {
     html{
         font-size: 16px;
     }
@@ -1127,7 +1107,7 @@ footer{
     }
   }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1100px){
     html{
         font-size: 16px;
     }
