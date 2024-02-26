@@ -27,10 +27,6 @@ main{
     margin-right: auto;
 } 
 
-.post-athor-info{
-    margin-top: 1%;
-}
-
 .post-title p{
     font-size: 1.5rem;
     font-weight: 800;
@@ -73,6 +69,7 @@ main{
     width: 95%;
     height: fit-content;
     padding-bottom: 5%;
+    overflow: auto;
 }
 
 .post-content p{
@@ -83,10 +80,12 @@ main{
 
 .post-content img, table{
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.post-content table{
-    border:1px solid black;
+.post-content tr, td{
+    font-size: 1rem;
 }
 
 .index-news{

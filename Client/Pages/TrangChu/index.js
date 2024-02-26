@@ -44,8 +44,9 @@ next.addEventListener("click", () => {
 //NAVBAR START
     const divNavs = document.querySelectorAll(".menu-item")
     const navTeaching = document.querySelector("#menu-item4");
+    const navRecognize = document.querySelector("#menu-item3")
     divNavs.forEach(item => {
-        if(item != navTeaching){
+        if(item != navTeaching && item != navRecognize){
             item.addEventListener("click", () => {
                 const nextLink = item.querySelector("a");
                 window.location.href = `${nextLink.getAttribute("href")}`;

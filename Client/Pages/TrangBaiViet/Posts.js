@@ -48,3 +48,4 @@ const setPostTitle = (e) => {
 const postTitle = document.querySelectorAll('.post-title-all');
 
 setPostTitle(postTitle);
+//Cac Su Kien khi click vào tieu de Bai Viet tren Trang Chu
