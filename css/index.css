@@ -12,10 +12,11 @@ a{
 }
 
 .sider{
+    position: absolute;
     display: none;
+    top: 100%;
     z-index: 9999;
     width: fit-content;
-    position: absolute;
     transition: linear 0.15s;
     background-color: #135FAB;
     overflow: hidden;
@@ -363,6 +364,10 @@ a{
     cursor: pointer;
 }
 
+.find_bar-sider{
+    padding-right: 5%;
+}
+
 .sub-parent{
     margin-left: 2%;
     display: flex;
@@ -372,7 +377,7 @@ a{
 .sub-menu{
     width: fit-content;
     position:absolute;
-    margin-top: 5%;
+    margin-top: 4.8%;
     display: none;
     z-index:-1;
     transition: linear 0.15s;
@@ -383,10 +388,10 @@ a{
     transition:all linear 0.15s;
     text-decoration:none;
     color: black;
-    padding: 1rem 2.5rem;
-    width: fit-content;
+    padding: 1rem;
+    width: 100%;
     display:block;
-    text-align: center;
+    text-align: left;
 }
 
 .sub-parent:hover .sub-menu{
@@ -574,6 +579,11 @@ a{
     margin-left: 6%;
 }
 
+.index-item-row2-boxs .body-item-more-all{
+    position: absolute;
+    bottom: -10%;
+}
+
 .body-item-box-all-3{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 5%;
@@ -707,6 +717,7 @@ footer{
     }
 
     .nav-response{
+        position: relative;
         display: block;
         width: 100%;
         background-color: #135FAB;
@@ -798,6 +809,12 @@ footer{
     .banner{
         width: 90%;
         height: 50vw;
+    }
+
+    .sub-menu{
+        top: 100%;
+        margin-top: 0;
+        right: 1%;
     }
 
     .index-news{
@@ -917,6 +934,7 @@ footer{
     }
 
     .nav-response{
+        position: relative;
         display: block;
         width: 100%;
         background-color: #135FAB;
@@ -999,17 +1017,27 @@ footer{
         height: 40vw;
     }
 
+    .sub-menu{
+        top: 100%;
+        margin-top: 0;
+        right: 1%;
+    }
 
     .index-item-row2, .index-item-row3, .index-item-row1.box1, .index-item-row1-box2{
-        display: block;
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap
     }
 
     .body-item-box-all, .body-item-box-all-3{
         position: relative;
-        display: inline-block;
         width: 40%;
         margin-left: 4.5%;
         margin-right: 4.5%;
+    }
+
+    .body-item-box-all{
+        margin-top: 5%;
     }
 
     .index-news-list, .body-item-text-all-2{
