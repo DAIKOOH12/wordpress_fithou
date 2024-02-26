@@ -767,12 +767,12 @@ footer{
     }
 
     .header-title img{
-        width: fit-content;
+        width: 12vw;
         height: 12vw;
     }
 
     .header-title-logo2 img{
-        width: fit-content;
+        width: 15vw;
         height: 9vw;
     }
 
@@ -880,6 +880,14 @@ footer{
         width: 90%;
     }
 
+    .index-item-row2-boxs .body-item-more-all{
+        bottom: -15%;
+    }
+
+    .body-item-box-all{
+        margin-top: 7%;
+    }
+
     .index-item-row1-box1-title{
         font-size: 2rem;
     }
@@ -983,12 +991,12 @@ footer{
         display: none;
     }
     .header-title img{
-        width: fit-content;
+        width: 12vw;
         height: 12vw;
     }
 
     .header-title-logo2 img{
-        width: fit-content;
+        width: 15vw;
         height: 9vw;
     }
 
