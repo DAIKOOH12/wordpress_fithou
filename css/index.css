@@ -80,19 +80,19 @@ a{
 }
 
 .header-title .header-title-text-line1{
-    font-size: 2.2rem;
+    font-size: 2.25em;
     line-height: 129.3%;
     word-spacing: 0.09;
 }
 
 .header-title .header-title-text-line2{
-    font-size:1.75rem;
+    font-size: 2em;
     line-height: 130.3%;
     word-spacing: 0.09;
 }
 
 .header-title .header-title-text-line3{
-    font-size: 1.1rem;
+    font-size: 1.5em;
     line-height: 130.3%;
     word-spacing: 0.02;
 }
@@ -398,7 +398,7 @@ a{
 .sub-menu{
     width: fit-content;
     position:absolute;
-    margin-top: 4.8%;
+    margin-top: 4.1%;
     display: none;
     z-index:-1;
     transition: linear 0.15s;
@@ -513,7 +513,7 @@ a{
 
 .index-item-row1-box1-text a{
     line-height: 150%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .index-item-row1-box1-more{
@@ -521,7 +521,7 @@ a{
     margin-top: 5%;
     text-align: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .index-item-row1-box2{
@@ -732,9 +732,9 @@ footer{
     height: 5vh;
 }
 
-  @media screen and (max-width: 478px) {
+  @media screen and (max-width: 499px) {
     html{
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .nav-response{
@@ -828,7 +828,7 @@ footer{
     }
 
     .header-title img{
-        width: 12vw;
+        width: 10vw;
         height: 12vw;
     }
 
@@ -848,7 +848,7 @@ footer{
     }
     
     .header-title .header-title-text-line2{
-        font-size: 1.4375em;
+        font-size: 1.5em;
         line-height: 130.3%;
         word-spacing: 0.09;
     }
@@ -997,9 +997,9 @@ footer{
     }
 }
 
-  @media screen and (min-width: 479px) and (max-width: 950px) {
+  @media screen and (min-width: 500px) and (max-width: 899px) {
     html{
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
     .nav-response{
@@ -1063,7 +1063,6 @@ footer{
 
     .sub-menu-item-child-href a, .sub-menu-item-child-2-title a{
         font-weight: lighter;
-        font-size: 1.5vw;
     }
 
     #menu-item3:hover .menu-item-child{
@@ -1093,7 +1092,7 @@ footer{
     }
 
     .header-title img{
-        width: 12vw;
+        width: 10vw;
         height: 12vw;
     }
 
@@ -1103,18 +1102,19 @@ footer{
     }
 
     .header-title .header-title-text-line1{
-        font-size: 1.75rem;
+        font-size: 2.5em;
         line-height: 129.3%;
         word-spacing: 0.09;
     }
     
     .header-title .header-title-text-line2{
-        font-size:1.4375rem;
+        font-size: 2.25em;
         line-height: 130.3%;
         word-spacing: 0.09;
     }
     
     .header-title .header-title-text-line3{
+        font-size: 2em;
         line-height: 130.3%;
         word-spacing: 0.02;
     }
@@ -1212,24 +1212,25 @@ footer{
     }
   }
 
-@media screen and (min-width: 950px) and (max-width: 1099px) {
+@media screen and (min-width: 900px) and (max-width: 1120px) {
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .header-title .header-title-text-line1{
-        font-size: 1.75rem;
+        font-size: 2.25em;
         line-height: 129.3%;
         word-spacing: 0.09;
     }
     
     .header-title .header-title-text-line2{
-        font-size:1.4375rem;
+        font-size: 2em;
         line-height: 130.3%;
         word-spacing: 0.09;
     }
     
     .header-title .header-title-text-line3{
+        font-size: 1.5em;
         line-height: 130.3%;
         word-spacing: 0.02;
     }
@@ -1265,9 +1266,9 @@ footer{
     }
   }
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1121px){
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .banner{
