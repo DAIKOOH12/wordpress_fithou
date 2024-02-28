@@ -139,64 +139,12 @@ a{
     border-right: 0px;
 }
 
-.menu-item-child{
-    display: none;
-}
-
-#menu-item4:hover .menu-item-child{
-    position: absolute;
-    display: flex;;
-    flex-direction: column;
-    background-color: #fff;
-    width: fit-content;
-    height: fit-content;
-    padding-right: 3.2%;
-    top: 100%;
-    z-index: 9999;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-#menu-item3:hover .menu-item-child{
-    position: absolute;
-    display: flex;;
-    flex-direction: column;
-    background-color: #fff;
-    width: fit-content;
-    height: fit-content;
-    padding-right: 2.2%;
-    top: 100%;
-    z-index: 9999;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 .menu a, .menu-item p{
     font-size: 0.9rem;
     line-height: 1.5;
     font-weight: bold;
     text-decoration: none;
     color: #FFFFFF;
-}
-
-.sub-menu-item-child-title a{
-    text-align: left;
-}
-
-.sub-menu-item-child-title, .sub-menu-item-child-href{
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 3%;
-    padding-right: 20%;
-    width: 100%;
-}
-
-.sub-menu-item-child-title p{
-    font-weight: bolder;
-}
-
-.sub-menu-item-child-href a{
-    font-weight: 400;
 }
 
 .menu-item:hover a{
@@ -213,31 +161,104 @@ a{
     background-color: #FFFFFF;
 }
 
-.sub-menu-item-child-title p, .sub-menu-item-child-href a{
+.menu-item-child{
+    display: none;
+}
+
+#menu-item4:hover .menu-item-child{
+    position: absolute;
+    display: flex;;
+    flex-direction: column;
+    background-color: #135FAB;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 3.2%;
+    top: 100%;
+    z-index: 9999;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#menu-item3:hover .menu-item-child{
+    position: absolute;
+    display: flex;;
+    flex-direction: column;
+    background-color: #135FAB;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 2.2%;
+    top: 100%;
+    z-index: 9999;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#menu-item3:hover a{
+    background-color: #135FAB;
+    color: #FFFFFF;
+}
+
+.sub-menu-item-child-href{
     cursor: pointer;
 }
 
-.sub-menu-item-child-title:hover{
-    background-color: #426FFF;
-}
-
-.sub-menu-item-child-title:hover p{
-    background-color: #426FFF;
-    color: yellow;
-}
-
-.sub-menu-item-child-title:hover a{
-    background-color: #426FFF;
-    color: yellow;
-}
-
 .sub-menu-item-child-href:hover{
-    background-color: #426FFF;
+    background-color: #FFFFFF;
 }
 
 .sub-menu-item-child-href:hover a{
-    background-color: #426FFF;
-    color: yellow;
+    color: #02033B !important;
+    background-color: #FFFFFF !important;
+}
+
+.sub-menu-item-child-title a, .sub-menu-item-child-href a{
+    text-align: left;
+}
+
+.sub-menu-item-child-title, .sub-menu-item-child-href{
+    position: relative;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5% 20% 3% 3%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.menu-item-child-2{
+    display: none;
+}
+
+.menu-item-child-2 a {
+    padding-left: 5%;
+}
+
+
+.sub-menu-item-child-title:hover{
+    padding-bottom: 0;
+}
+
+.sub-menu-item-child-title:hover .menu-item-child-2{
+    display: block;
+    width: 150%;
+    margin-top: 5%;
+    margin-left: -3%;
+    padding-left: 5%;
+    background-color: #FFFFFF;
+}
+
+.sub-menu-item-child-2-title:hover{
+    background-color: #007CBA;
+    width: 150%;
+    margin-left: -4%;
+    padding-left: 5%;
+}
+
+.sub-menu-item-child-2-title:hover a{
+    background-color: #007CBA;
+    color: yellow
 }
 
 .banner{
