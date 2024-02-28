@@ -15,15 +15,14 @@ a{
     position: absolute;
     display: none;
     top: 100%;
-    z-index: 9999;
+    z-index: 999;
     width: fit-content;
     transition: linear 0.15s;
     background-color: #135FAB;
-    overflow: hidden;
 }
 
 .sider-item{
-    width: 100%;
+    position: relative;
     transition:all linear 0.15s;
     text-decoration:none;
     padding: 1rem 2.5rem;
@@ -42,7 +41,7 @@ a{
 
 .sider-item:hover a{
     color: black;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .nav-response{
@@ -115,10 +114,6 @@ a{
     align-items: center;
 }
 
-#menu-item4, #menu-item3{
-    cursor: default
-}
-
 .menu-item{
     display: inline-block;
     width: 12%;
@@ -172,7 +167,7 @@ a{
     background-color: #135FAB;
     width: fit-content;
     height: fit-content;
-    padding-right: 3.2%;
+    padding-right: 1%;
     top: 100%;
     z-index: 9999;
     white-space: nowrap;
@@ -186,7 +181,7 @@ a{
     background-color: #135FAB;
     width: fit-content;
     height: fit-content;
-    padding-right: 2.2%;
+    padding-right: 2.4%;
     top: 100%;
     z-index: 9999;
     white-space: nowrap;
@@ -221,9 +216,14 @@ a{
     font-size: 0.9rem;
     color: #FFFFFF;
     font-weight: bold;
-    padding: 5% 20% 3% 3%;
-    width: 100%;
+    padding: 5% 5% 3% 3%;
+    width: 120%;
     cursor: pointer;
+    border-bottom: 1px solid #BDBEC3;
+}
+
+.sub-menu-item-child-title{
+    transition:all linear 0.25s;
 }
 
 
@@ -787,6 +787,46 @@ footer{
         display: none;
     }
 
+
+    .sider-item p{
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .sider-item:hover p{
+        color: #02033B;
+    }
+
+    .sub-menu-item-child-href a, .sub-menu-item-child-2-title a{
+        font-weight: lighter;
+    }
+
+    #menu-item3:hover .menu-item-child{
+        top: 0;
+        left: 100%;
+    }
+
+    #menu-item4:hover .menu-item-child{
+        top: 0;
+        left: 100%;
+    }
+
+    .sub-menu-item-child-title:hover .menu-item-child-2{
+        margin-left: -12%;
+        padding-left: 10%;
+    }
+
+    .sub-menu-item-child-title{
+        padding: 5% 3%;
+        font-weight: lighter;
+    }
+
+
+    .sub-menu-item-child-href, .sub-menu-item-child-title{
+        text-decoration:none;
+        padding: 1rem 2.5rem;
+    }
+
     .header-title img{
         width: 12vw;
         height: 12vw;
@@ -1011,6 +1051,47 @@ footer{
     .form-finding{
         display: none;
     }
+
+    .sider-item p{
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    .sider-item:hover p{
+        color: #02033B;
+    }
+
+    .sub-menu-item-child-href a, .sub-menu-item-child-2-title a{
+        font-weight: lighter;
+        font-size: 1.5vw;
+    }
+
+    #menu-item3:hover .menu-item-child{
+        top: 0;
+        left: 100%;
+    }
+
+    #menu-item4:hover .menu-item-child{
+        top: 0;
+        left: 100%;
+    }
+
+    .sub-menu-item-child-title{
+        padding: 5% 3%;
+        font-weight: lighter;
+    }
+
+    .sub-menu-item-child-href, .sub-menu-item-child-title{
+        text-decoration:none;
+        padding: 1rem 2.5rem;
+    }
+
+    .sub-menu-item-child-title:hover .menu-item-child-2{
+        margin-top: 5%;
+        margin-left: -12%;
+        padding-left: 10%;
+    }
+
     .header-title img{
         width: 12vw;
         height: 12vw;
